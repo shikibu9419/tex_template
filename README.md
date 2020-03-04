@@ -1,12 +1,12 @@
-# My LaTeX Template
+# TeX Template
 
 This is my pLaTeX / LuaLaTeX template using Docker.
 
-## compile
+## Compiling
 ```
-# build & compile
+# build & compile (The Docker image is huge!)
 > docker-compose build
 > docker-compose up
-# If `llmk` is available and you don't use Docker
+# If `llmk` is available and you don't use Docker:
 > llmk
 ```
