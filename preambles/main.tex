@@ -1,0 +1,58 @@
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{comment}
+\usepackage{empheq}
+\usepackage{enumitem}
+\usepackage{here}
+\usepackage{karnaugh-map}
+\usepackage{mathptmx}
+\usepackage{mleftright}
+\usepackage{multirow}
+\usepackage{listings,jlisting}
+\usepackage{lscape}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{subfiles}
+\usepackage{url}
+
+%% nearly equals
+\newcommand{\near}{\:\approx\:}
+%% UNIT in Formula
+\newcommand{\un}[1]{\:\textrm{#1}}
+%% differencial
+\newcommand{\df}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+%% differencial second
+\newcommand{\dfs}[2]{\frac{\mathrm{d}^2#1}{\mathrm{d}#2^2}}
+%% (hoge)
+\newcommand{\paren}[1]{\left(#1\right)}
+%% (hoge)
+\newcommand{\sbra}[1]{\mleft\lbrack#1\mright\rbrack}
+%% |hoge|
+\newcommand{\abs}[1]{\mleft|#1\mright|}
+\newcommand{\norm}[1]{\abs{#1}}
+%% (hoge|fuga)
+\newcommand{\rmiddle}[1]{\mathrel{}\middle#1\mathrel{}}
+\newcommand{\agivenbp}[2]{\mleft(#1\relmiddle|#2\mright)}
+
+% math operators
+\DeclareMathOperator*{\argmax}{arg~max}
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator{\tr}{tr}
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+
+% enumitem config
+% \setlist[enumerate,1]{label= (\arabic*)}
+% \setlist[enumerate,2]{label= (\alph*)}
+
+%% Hyphenation setting
+\hyphenpenalty=1000\relax
+\exhyphenpenalty=1000\relax
+\sloppy
+
+% source code
+\lstset{
+	basicstyle={\ttfamily\footnotesize},
+	numbers=left,
+	frame=single
+}

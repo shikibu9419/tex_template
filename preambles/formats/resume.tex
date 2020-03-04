@@ -1,0 +1,55 @@
+\documentclass[twocolumn,9pt]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+
+
+\pagestyle{empty}
+
+\setlength{\columnsep}{5mm}
+\setlength{\textheight}{45\baselineskip}
+\addtolength{\textheight}{\topskip}
+
+\setlength{\smallskipamount}{0.8mm}
+\setlength{\medskipamount}{1.4mm}
+\setlength{\bigskipamount}{2.2mm}
+
+\setlength\abovecaptionskip{1pt}
+\setlength\intextsep{5pt}
+\setlength\textfloatsep{1pt}
+\setlength\floatsep{1pt}
+
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}%
+  {\z@}%   indent size
+  {0.8ex}% left margin
+  {0.8ex}% right margin
+  {\normalfont\Large\bfseries}}% content
+
+\renewcommand\subsection{\@startsection {subsection}{1}%
+  {\z@}%   indent size
+  {0.8ex}% left margin
+  {0.8ex}% right margin
+  {\normalfont\large\bfseries}}% content
+
+\renewcommand\subsubsection{\@startsection {subsubsection}{1}%
+  {\z@}%   indent size
+  {0.8ex}% left margin
+  {0.8ex}% right margin
+  {\normalfont\large\bfseries}}% content
+
+\renewenvironment{itemize}{
+   \begin{list}{$\bullet$\ \ }
+   {
+      \setlength{\itemindent}{0pt}
+      \setlength{\leftmargin}{2.5zw}
+      \setlength{\rightmargin}{0zw}
+      \setlength{\labelsep}{0zw}
+      \setlength{\labelwidth}{3zw}
+      \setlength{\itemsep}{0em}
+      \setlength{\parsep}{0em}
+      \setlength{\listparindent}{0zw}
+   }}{
+   \end{list}
+}
+
+\makeatother

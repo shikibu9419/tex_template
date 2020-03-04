@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  texlive:
+    image: shikibu9419/texlive2019:latest
+    command: llmk
+    volumes:
+      - type: volume
+        source: ltfontcache
+        target: /usr/local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl
+      - type: bind
+        source: .
+        target: /workdir
+
+volumes:
+  ltfontcache:
+    external: true

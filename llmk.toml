@@ -1,0 +1,11 @@
+source = "document.tex"
+
+[programs.latex]
+command = "platex"
+opts = ["-synctex=1", "-interaction=nonstopmode", "-halt-on-error"]
+args = ["%S"]
+
+# [programs.latex]
+# command = "lualatex"
+# opts = ["-synctex=1", "-interaction=nonstopmode", "-file-line-error"]
+# args = ["%S"]
