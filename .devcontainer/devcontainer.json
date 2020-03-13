@@ -1,0 +1,12 @@
+{
+  "name": "texlive",
+  "service": "texlive",
+  "dockerComposeFile": "../docker-compose.yml",
+  "workspaceFolder": "/workdir",
+  "extensions": ["james-yu.latex-workshop"],
+  "setting": {
+    "editor.renderControlCharacters": true,
+    "window.zoomLevel": 0,
+    "latex-workshop.message.update.show": false
+  }
+}
