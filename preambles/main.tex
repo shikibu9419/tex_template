@@ -1,18 +1,19 @@
 \usepackage{amsmath}
 \usepackage{caption}
 \usepackage{comment}
+\usepackage{docmute}
 \usepackage{empheq}
 \usepackage{enumitem}
 \usepackage{here}
 \usepackage{karnaugh-map}
+\usepackage{listings,jlisting}
+\usepackage{lscape}
 \usepackage{mathptmx}
 \usepackage{mleftright}
 \usepackage{multirow}
-\usepackage{listings,jlisting}
-\usepackage{lscape}
+\usepackage{refcheck}
 \usepackage{setspace}
 \usepackage{siunitx}
-\usepackage{subfiles}
 \usepackage{url}
 
 %% nearly equals
@@ -54,5 +55,8 @@
 \lstset{
 	basicstyle={\ttfamily\footnotesize},
 	numbers=left,
+  breaklines=true,
 	frame=single
+  escapeinside={\%*}{*)},
+  keywordstyle=\bfseries,
 }
