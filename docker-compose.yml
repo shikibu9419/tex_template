@@ -2,7 +2,7 @@ version: '3.2'
 services:
   texlive:
     image: shikibu9419/texlive2019:latest
-    command: sleep infinity
+    command: llmk
     volumes:
       - type: volume
         source: ltfontcache
