@@ -4,7 +4,42 @@
   "dockerComposeFile": ["../docker-compose.yml", "docker-compose.extend.yml"],
   "workspaceFolder": "/workdir",
   "extensions": ["james-yu.latex-workshop"],
-  "setting": {
+  "settings": {
+    "latex-workshop.latex.recipes": [
+      {
+        "name": "latexmk",
+        "tools": ["latexmk"]
+      },
+      {
+        "name": "llmk",
+        "tools": ["llmk", "clean"]
+      },
+      {
+        "name": "clean",
+        "tools": ["llmk", "clobber"]
+      }
+    ],
+    "latex-workshop.latex.tools": [
+      {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": ["%DOC%"]
+      },
+      {
+        "name": "llmk",
+        "command": "llmk"
+      },
+      {
+        "name": "clean",
+        "command": "llmk",
+        "args": ["--clean"]
+      },
+      {
+        "name": "clobber",
+        "command": "llmk",
+        "args": ["--clobber"]
+      }
+    ],
     "editor.renderControlCharacters": true,
     "window.zoomLevel": 0,
     "latex-workshop.message.update.show": false
