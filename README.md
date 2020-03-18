@@ -10,6 +10,4 @@ Used Docker image: [shikibu9419/texlive](https://hub.docker.com/repository/docke
 # build & compile (build takes a lot of time!)
 $ docker-compose build
 $ docker-compose up
-# if you don't use Docker and `llmk` is available:
-$ llmk
 ```

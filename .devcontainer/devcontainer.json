@@ -17,6 +17,10 @@
       {
         "name": "clean",
         "tools": ["llmk", "clobber"]
+      },
+      {
+        "name": "format",
+        "tools": ["format"]
       }
     ],
     "latex-workshop.latex.tools": [
@@ -38,10 +42,12 @@
         "name": "clobber",
         "command": "llmk",
         "args": ["--clobber"]
+      },
+      {
+        "name": "format",
+        "command": "./scripts/format.sh"
       }
     ],
-    "editor.renderControlCharacters": true,
-    "window.zoomLevel": 0,
     "latex-workshop.message.update.show": false
   }
 }

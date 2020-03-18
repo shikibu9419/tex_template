@@ -1,9 +1,4 @@
 source = "document.tex"
-sequence = ["before", "latex", "bibtex", "makeindex", "dvipdf"]
-
-[programs.before]
-command = "./scripts/format.sh"
-args = ["%S"]
 
 [programs.latex]
 command = "platex"
